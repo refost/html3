@@ -18,7 +18,10 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/myStyle.css">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -26,70 +29,122 @@
 
   <header class="header">
     <div class="wrapper">
-      <div class="logo">
-        <img src="img/logo.png" alt="logo" width="100px" height="100px">
-        <div>
-          <p class="description">
-            <span class="title">Название компании</span>
-            самая клевая компания
-          </p>
-          </div>
-      </div>
-      <div class="contacts">
-        <ul class="phone">
-          <li>+7(499)777-77-77</li>
-          <li>+7(499)777-77-77</li>
-        </ul>
-      </div>
+      <img src="img/logo.png" alt="logo" width="273px" height="100px">
+      <ul class="phone">
+        <li>+7(499)777-77-77</li>
+        <li>+7(499)777-77-77</li>
+      </ul>
     </div>
   </header>
 
   <nav class="menu">
     <div class="wrapper">
-      <ul>
+      <ul class="main-menu">
         <li>
-          <a href="#">Главная</a>
+          <a href="#" class="start"><div>Главная</div></a>
         </li>
         <li>
-          <a href="#">Каталог</a>
+          <a href="#"><div>Каталог</div></a>
         </li>
         <li>
-          <a href="#">Доставка и оплата</a>
+          <a href="#"><div>Доставка и оплата</div></a>
         </li>
         <li>
-          <a href="#">Прайс-лист</a>
+          <a href="#"><div>Прайс-лист</div></a>
         </li>
         <li>
-          <a href="#">Контакты</a>
+          <a href="#"><div>Контакты</div></a>
         </li>
       </ul>
     </div>
   </nav>
 
   <section class="slider">
-
+    <div class="backSlider">
+      <img src="img/backSlider.png" width="2000px" height="400px">
+      <img src="img/faceSlider.png" class="face">
+    </div>
   </section>
 
   <section class="content">
     <div class="wrapper">
-      <div class="news">
-
+      <div>
+        <div class="news">
+          <h2 class="nTitle">Новости</h2>
+          <div class="news-list">
+            <div class="new">
+              <span class="date"><em>14 сентября 2013 г.</em></span>
+              <a href="#">Редизайн веб-сайта архитектурного бюро.</a>
+            </div>
+            <div class="new">
+              <span class="date"><em>14 сентября 2013 г.</em></span>
+              <a href="#">Раскрутка интернет-магазина декоративных стикеров и виниловых наклеек.</a>
+            </div>
+            <div class="new">
+              <span class="date"><em>14 сентября 2013 г.</em></span>
+               <a href="#">SEO-продвижение сайта поставщика дизель генераторов.</a>
+            </div>
+            <div class="new">
+              <span class="date"><em>14 сентября 2013 г.</em></span>
+              <a href="#">Поисковое продвижение веб-сайта поставщика гидрооборудования.</a>
+            </div>
+          </div>
+          <div class="more">
+            <a href="#">Архив новостей</a>
+          </div>
+        </div>
       </div>
       <div class="main-content">
-
+        <div class="public">
+          <h1 class="head-public">Компания «Пиксель Плюс»</h1>
+          <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали
+            участие в разработке более чем 700 сайтов, поэтому можем уверенно называть
+            себя профессионалами. На данный момент наш коллектив состоит из более чем
+            30 сотрудников работающих в двух офисах в Москве и Зеленограде.</p>
+          <p>Одним из основных направлений работ нашей компании является поисковое
+            продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными
+            клиентами по более чем 11 000 поисковым запросам. При этом в работе основной
+            акцент мы делаем на качестве работ, а так же применяем собственные уникальные
+            разработки в области SEO продвижения. На данный момент отдел SEO состоит из
+            9 человек под руководством ведущего специалиста, преимущественно работающих
+            в нашем московском офисе.</p>
+          <p>Наша компания является золотым сертифицированным партнёром «1С-Битрикс»
+            (сертификат № 33939 с 2007 по 2013), что ещё раз подтверждает квалификацию
+            наших сотрудников. В январе 2013 мы стали лидерами продаж продуктов
+            «1С-Битрикс» и вошли в число лучших разработчиков сайтов России. Все
+            специалисты занимающиеся изготовлением сайтов проходят обязательную
+            сертификацию «1С-Битрикс» в течении первых 6 месяцев работы в компании,
+            после чего продолжают непрерывно поддерживать и развивать свои
+            профессиональные навыки.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="copyright">
-
-    </div>
-    <nav class="nav-footer">
-
-    </nav>
-    <div class="logo-footer">
-
+    <div class="wrapper">
+      <div class="copyright">
+        <p>
+          © 2012–2013 ЗАО «Компания»
+          info@name.ru
+        </p>
+      </div>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Прайс-лист</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="logo-footer">
+        <img src="img/logo-bottom.png" width="36px" height="38px" alt="logo">
+        <p>
+          Разработка сайта —
+          компания «Пиксель Плюс»
+        </p>
+      </div>
     </div>
   </footer>
 
