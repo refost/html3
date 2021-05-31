@@ -29,11 +29,14 @@
 
   <header class="header">
     <div class="wrapper">
-      <img src="img/logo.png" alt="logo" width="273px" height="100px">
-      <ul class="phone">
-        <li>+7(499)777-77-77</li>
-        <li>+7(499)777-77-77</li>
-      </ul>
+      <a href="#"><img src="img/logo.png" alt="logo" width="273px" height="100px"></a>
+      <div class="contacts">
+        <ul>
+          <li>+7(499)777-77-77</li>
+          <li>+7(499)777-77-77</li>
+        </ul>
+        <div id="modalBtn"><a href="#">Обратная связь</a></div>
+      </div>
     </div>
   </header>
 
@@ -63,61 +66,146 @@
     <div class="backSlider">
       <img src="img/backSlider.png" width="2000px" height="400px">
       <img src="img/faceSlider.png" class="face">
+      <img src="img/faceSlider2.png" width="1247px" height="462" alt="slide2">
     </div>
   </section>
 
   <section class="content">
+    <div class="breadcrumb">
+      <span class="crumb">Главная</span>
+      <span> / </span>
+      <span class="crumb">Каталог</span>
+      <span> / </span>
+      <span class="crumb thiscrumb">Бытовая техника</span>
+    </div>
     <div class="wrapper">
       <div>
-        <div class="news">
-          <h2 class="nTitle">Новости</h2>
-          <div class="news-list">
-            <div class="new">
-              <span class="date"><em>14 сентября 2013 г.</em></span>
-              <a href="#">Редизайн веб-сайта архитектурного бюро.</a>
-            </div>
-            <div class="new">
-              <span class="date"><em>14 сентября 2013 г.</em></span>
-              <a href="#">Раскрутка интернет-магазина декоративных стикеров и виниловых наклеек.</a>
-            </div>
-            <div class="new">
-              <span class="date"><em>14 сентября 2013 г.</em></span>
-               <a href="#">SEO-продвижение сайта поставщика дизель генераторов.</a>
-            </div>
-            <div class="new">
-              <span class="date"><em>14 сентября 2013 г.</em></span>
-              <a href="#">Поисковое продвижение веб-сайта поставщика гидрооборудования.</a>
-            </div>
-          </div>
-          <div class="more">
-            <a href="#">Архив новостей</a>
+        <div class="leftblock">
+          <ul class="categories">
+            <li><span>Автомобили</span></li>
+            <li><span>Бытовая техника</span>
+              <ul class="submenu">
+                <li><span>Микроволновки</span></li>
+                <li><span>Холодильники</span></li>
+                <li><span>Посудомоечные машины</span></li>
+                <li><span>Чайники</span></li>
+              </ul>
+            </li>
+            <li><span>Мобильная техника</span></li>
+            <li><span>Компьютеры</span></li>
+            <li><span>Одежда</span></li>
+            <li><span>Недвижимость</span></li>
+          </ul>
+          <div>
+            <img src="img/X.png" width="97px" height="113px" alt="picture">
+            <h3 class="price-list">
+              Прайс-лист
+            </h3>
           </div>
         </div>
       </div>
-      <div class="main-content">
-        <div class="public">
-          <h1 class="head-public">Компания «Пиксель Плюс»</h1>
-          <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали
-            участие в разработке более чем 700 сайтов, поэтому можем уверенно называть
-            себя профессионалами. На данный момент наш коллектив состоит из более чем
-            30 сотрудников работающих в двух офисах в Москве и Зеленограде.</p>
-          <p>Одним из основных направлений работ нашей компании является поисковое
-            продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными
-            клиентами по более чем 11 000 поисковым запросам. При этом в работе основной
-            акцент мы делаем на качестве работ, а так же применяем собственные уникальные
-            разработки в области SEO продвижения. На данный момент отдел SEO состоит из
-            9 человек под руководством ведущего специалиста, преимущественно работающих
-            в нашем московском офисе.</p>
-          <p>Наша компания является золотым сертифицированным партнёром «1С-Битрикс»
-            (сертификат № 33939 с 2007 по 2013), что ещё раз подтверждает квалификацию
-            наших сотрудников. В январе 2013 мы стали лидерами продаж продуктов
-            «1С-Битрикс» и вошли в число лучших разработчиков сайтов России. Все
-            специалисты занимающиеся изготовлением сайтов проходят обязательную
-            сертификацию «1С-Битрикс» в течении первых 6 месяцев работы в компании,
-            после чего продолжают непрерывно поддерживать и развивать свои
-            профессиональные навыки.</p>
+      <div class="center">
+        <div class="list">
+          <div class="item">
+            <div class="info">
+              <img src="img/photo.png" width="210px" height="209px" alt="item">
+              <a href="#" class="item-title">
+                Cамый клевый чайник, который надо купить!
+              </a>
+            </div>
+            <div class="buy">
+              <span class="price">1900 p.</span>
+              <a href="#">
+                <img src="img/button.png" width="30px" height="23px" alt="add">
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="info">
+              <img src="img/photo.png" width="210px" height="209px" alt="item">
+              <a href="#" class="item-title">
+                Cамый клевый чайник, который надо купить!
+              </a>
+            </div>
+            <div class="buy">
+              <span class="price">1900 p.</span>
+              <a href="#">
+                <img src="img/button.png" width="30px" height="23px" alt="add">
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="info">
+              <img src="img/photo.png" width="210px" height="209px" alt="item">
+              <a href="#" class="item-title">
+                Cамый клевый чайник, который надо купить!
+              </a>
+            </div>
+            <div class="buy">
+              <span class="price">1900 p.</span>
+              <a href="#">
+                <img src="img/button.png" width="30px" height="23px" alt="add">
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="info">
+              <img src="img/photo.png" width="210px" height="209px" alt="item">
+              <a href="#" class="item-title">
+                Cамый клевый чайник, который надо купить!
+              </a>
+            </div>
+            <div class="buy">
+              <span class="price">1900 p.</span>
+              <a href="#">
+                <img src="img/button.png" width="30px" height="23px" alt="add">
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="info">
+              <img src="img/photo.png" width="210px" height="209px" alt="item">
+              <a href="#" class="item-title">
+                Cамый клевый чайник, который надо купить!
+              </a>
+            </div>
+            <div class="buy">
+              <span class="price">1900 p.</span>
+              <a href="#">
+                <img src="img/button.png" width="30px" height="23px" alt="add">
+              </a>
+            </div>
+          </div>
         </div>
+        <div class="pager">
+          <span class="page">1</span>
+          <span class="page">2</span>
+          <span class="page this">3</span>
+          <span class="page">4</span>
+          <span class="page">5</span>
+          <span class="page">6</span>
+          <span class="page">7</span>
+        </div>
+        <div class="bottom-center">
+          <div class="about">
+            Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие
+            в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами.
+            На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух
+            офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви,
+            ухода молодости, угасания души.
+          </div>
+          <div class="about">
+            Одним из основных направлений работ нашей компании является поисковое продвижение сайтов,
+            на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000
+            поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же
+            применяем собственные уникальные разработки в области SEO продвижения. На данный момент
+            отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно
+            работающих в нашем московском офисе.
+          </div>
+        </div>
+
       </div>
+
     </div>
   </section>
 
@@ -141,17 +229,32 @@
       <div class="logo-footer">
         <img src="img/logo-bottom.png" width="36px" height="38px" alt="logo">
         <p>
-          Разработка сайта —
+          <a href="#">Разработка сайта</a> —
           компания «Пиксель Плюс»
         </p>
       </div>
     </div>
   </footer>
-
+  <div class="modal" id="modal">
+    <div class="window">
+      <img src="img/close.png" class="close">
+      <form action="">
+        <h3>Обратна связь</h3>
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name">
+        <label for="phone">Телефон</label>
+        <input type="text" id="phone" name="phone" row="1" cols="12">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Поле обязательно для заполнения">
+        <label for="message">Сообщение</label>
+        <input type="textarea" id="message" name="message" rows="5" cols="30">
+        <input type="submit" id="btn" value="Отправить" >
+      </form>
+    </div>
+  </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
