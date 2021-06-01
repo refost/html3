@@ -26,6 +26,8 @@
 </head>
 
 <body>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
 
   <header class="header">
     <div class="wrapper">
@@ -63,10 +65,19 @@
   </nav>
 
   <section class="slider">
-    <div class="backSlider">
-      <img src="img/backSlider.png" width="2000px" height="400px">
-      <img src="img/faceSlider.png" class="face">
-      <img src="img/faceSlider2.png" width="1247px" height="462" alt="slide2">
+    <div class="bodySlider">
+      <div class="backSlider">
+        <div class="faceSlider">
+          <div class="slider-item">
+            <img src="img/faceSlider.png" width="1247px" height="462" alt="slide1">
+          </div>
+          <div class="slider-item">
+            <img src="img/faceSlider2.png" width="1247px" height="462" alt="slide2">
+          </div>
+        </div>
+      </div>
+      <div class="sliderButton">
+      </div>
     </div>
   </section>
 
@@ -236,18 +247,20 @@
     </div>
   </footer>
   <div class="modal" id="modal">
+    <div class="overlay">
+    </div>
     <div class="window">
-      <img src="img/close.png" class="close">
-      <form action="">
+      <img src="img/close.png" id="close">
+      <form action="" class="form">
         <h3>Обратна связь</h3>
         <label for="name">Ваше имя</label>
-        <input type="text" id="name" name="name">
+        <input type="tel" id="name" name="name" required placeholder="Поле обязательно для заполнения">
         <label for="phone">Телефон</label>
-        <input type="text" id="phone" name="phone" row="1" cols="12">
+        <input type="text" id="phone" name="phone" required placeholder="Поле обязательно для заполнения">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required placeholder="Поле обязательно для заполнения">
         <label for="message">Сообщение</label>
-        <input type="textarea" id="message" name="message" rows="5" cols="30">
+        <input type="textarea" id="message" name="message" rows="5" cols="30" required placeholder="Поле обязательно для заполнения">
         <input type="submit" id="btn" value="Отправить" >
       </form>
     </div>
@@ -255,6 +268,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

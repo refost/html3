@@ -1,14 +1,31 @@
-var modal = document.getElementById("modal");
-var btn = document.getElementById("modalBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+
+/*slider*/
+
+$(document).ready(function (){
+  $('.faceSlider').slick({
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    draggable: false,
+    swipe: false,
+    appendArrows: $('.sliderButton')
+  });
+
+  /* modal window*/
+
+  $('#modalBtn').click(function(){
+    $('.overlay').fadeIn();
+    $('.window').fadeIn();
+    $('.modal').fadeIn();
+  });
+  $('#close').click(function(){
+    $('.modal').fadeOut();
+  });
+  $('.overlay').click(function(){
+    $('.modal').fadeOut();
+  });
+});
+
